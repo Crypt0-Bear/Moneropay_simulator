@@ -1,0 +1,18 @@
+#Moneropay simulator 
+
+READ BEFORE USING 
+
+
+This is a standalone flask application that simulates all of the
+endpoints that Moneropay server offers. 
+
+This is not a working system. This script is designed to help
+developers writing integrations that make use of moneropay. The 
+standalone script is helpful in debugging integrations since you don't have to worry about running a full monero node and database. 
+
+The addresses are hardcoded. All interactions are dummy simulated data
+
+
+
+
+

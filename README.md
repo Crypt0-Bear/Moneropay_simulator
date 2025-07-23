@@ -47,12 +47,25 @@ endpoint="http://localhost:5000"
 now you can curl with 
 curl -s -X GET "${endpoint}/balance"
 
-or for example, to get a new address:
+### for for example, to get a 
+
+new address:
+
 ```
 curl -s -X POST "${endpoint}/receive"   -H 'Content-Type: application/json'   -d '{"amount": 123000000, "description": "Server expenses", "callback_url": "http://merchant/callback/moneropay_tio2foogaaLo9olaew4o"}'
 ```
 
+The response would be :
 
+```
+{
+  "address": "85Mj6p4ybMRY3HprdShHFE7VtnLtMKWvQDEq9iAHQpHa3h3ARwne9habsyuuXLwnNqS9iRHbArzzdaEr3QVZ4ae23fkQQxr",
+  "amount": 123000000,
+  "created_at": "2025-07-23T00:58:17.717948Z",
+  "description": "Server expenses"
+}
+
+```
 
 
 
